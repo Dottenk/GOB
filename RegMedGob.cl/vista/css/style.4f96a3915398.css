@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,400,700&display=swap");
+
+@font-face {
+    font-family: 'gobCL';
+    font-style: normal;
+    src: url("font/gobCL_Regular.0257bb4b62d5.otf");
+}
+
+body {
+    font-family: "Roboto";
+    background-color: #fff;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.textUnderInputs {
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+    color: #264b7f;
+    text-align: center;
+}
+
+.headerloginCU .barra {
+    width: 167px;
+}
+
+
+#idxret{
+    color: #454545;
+    text-decoration: none;
+}
+
+
+.headerloginCU h3 {
+    font-family: "gobCl";
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #575757;
+    margin-top: 9px;
+    width: 134px;
+}
+
+.headerloginCU .franja {
+    width: 131px;
+    height: 16px;
+}
+
+.headerloginCU .franja .franjaazul {
+    background-color: #0f69b4;
+    height: 16px;
+    width: 37%;
+    display: block;
+    float: left;
+}
+
+.headerloginCU .franja .franjaroja {
+    background-color: #eb3c46;
+    height: 16px;
+    width: 63%;
+    display: block;
+    float: left;
+}
+
+.mainloginCU {
+    padding: 1rem 0;
+}
+
+.mainloginCU .header-form {
+    margin-bottom: 0.5rem;
+    padding: 0 1.5rem;
+}
+
+.mainloginCU .franja {
+    width: 168px;
+    height: 8px;
+    margin-left: 0.6rem;
+}
+
+.mainloginCU .franja .franjaazul {
+    background-color: #0f69b4;
+    height: 8px;
+    width: 37%;
+    display: block;
+    float: left;
+}
+
+.mainloginCU .franja .franjaroja {
+    background-color: #eb3c46;
+    height: 8px;
+    width: 63%;
+    display: block;
+    float: left;
+}
+
+.mainloginCU .header-form-title {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.mainloginCU .header-form-title h2 {
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    font-size: 31.25px;
+    margin-bottom: 0;
+}
+
+.mainloginCU .header-form-title p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.border-fr-grey {
+    border: 1px solid #373737;
+    padding: 0;
+}
+
+.border-fr-grey .btn-m,
+.border-fr-grey .btn-m:hover {
+    padding: 0.8rem 5.5rem;
+}
+
+.border-fr-grey .form-buttom {
+    text-align: right;
+    padding: 0.5rem 0 1rem 0;
+}
+
+.border-fr-grey .form-buttom .gob-btn-primary {
+    padding: 0.8rem 5.5rem;
+}
+
+.goblogin {
+    padding: 2rem 4rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    height: 48px !important;
+    border: 1px solid #373737;
+    border-radius: 0;
+    font-size: 18px !important;
+    line-height: 21px !important;
+    box-shadow: none;
+    background-color: #fff;
+}
+
+.group-label {
+    position: relative;
+    margin-bottom: 0.5rem;
+    min-height: 80px;
+}
+
+.group-label .gob-cancel,
+.group-label .gob--lbl-error,
+.group-label .gob-check {
+    display: none;
+}
+
+.group-label label {
+    color: #d9d9d9;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    background-color: #fff;
+    pointer-events: none;
+    left: 8px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.group-label input:focus~label,
+.group-label input:valid~label {
+    color: #264b7f;
+    top: -12px !important;
+    font-size: 12.8px !important;
+}
+
+.group-label input:focus {
+    border: 1px solid #0f69c4 !important;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.group-label span {
+    position: absolute;
+    font-size: 0.8rem;
+}
+
+.group-label i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.control-error .gob--lbl-error {
+    display: block;
+    color: #e22c2c;
+}
+
+.control-error input {
+    border: 1px solid #e22c2c !important;
+}
+
+.control-error input:valid~label {
+    color: #e22c2c;
+}
+
+.control-error .gob-cancel {
+    display: block;
+    color: #e22c2c;
+}
+
+.control-error .gob-check {
+    display: none;
+}
+
+.control-success .gob--lbl-success {
+    color: #007d57;
+}
+
+.control-success input {
+    border: 1px solid #007d57 !important;
+}
+
+.control-success input:valid~label {
+    color: #007d57;
+}
+
+.control-success .gob-check {
+    display: block;
+    color: #007d57;
+}
+
+.control-success .gob-cancel {
+    display: none;
+}
+
+.gob-btn-primary {
+    color: #fff;
+    background-color: #0062cc;
+    border: 1px solid #005cbf;
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    text-decoration: underline;
+    padding: 0.5rem 2rem;
+}
+
+.foofr {
+    padding: 0.5rem 0 0 0;
+}
+
+.foofr a {
+    text-decoration: underline !important;
+}
+
+.gob-mesage-response {
+    margin: 1rem 0;
+}
+
+.gob-mesage-response div {
+    display: flex;
+    font-size: 1rem;
+    padding: 0 4rem;
+    color: #001c41;
+    min-height: 87px;
+}
+
+.gob-mesage-response div i {
+    font-size: 1.5rem;
+    margin: auto 0;
+    margin-left: 1rem;
+}
+
+.gob-mesage-response div span {
+    margin: auto 10px;
+}
+
+.gob-mesage-response .gob-response-error {
+    background-color: rgba(226, 44, 44, 0.14);
+}
+
+.gob-mesage-response .gob-response-error i {
+    color: #e22c2c;
+}
+
+.gob-mesage-response .gob-response-success {
+    background: rgba(4, 163, 152, 0.14);
+}
+
+.gob-mesage-response .gob-response-success i {
+    color: #00ada2;
+}
+
+.gob-mesage-response .gob-response-warning {
+    background-color: rgba(248, 120, 0, 0.14);
+}
+
+.gob-mesage-response .gob-response-warning i {
+    color: #f56b0f;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .mainloginCU {
+        padding: 0;
+    }
+
+    .mainloginCU .border-fr-grey {
+        border: none;
+    }
+
+    .mainloginCU .border-fr-grey .btn-m,
+    .mainloginCU .border-fr-grey .btn-m:hover {
+        width: 100%;
+    }
+
+    .mainloginCU .border-fr-grey .goblogin {
+        padding: 1rem;
+    }
+
+    .mainloginCU .border-fr-grey .goblogin .gob-btn-primary {
+        width: 100%;
+    }
+
+    .mainloginCU .foofr {
+        padding: 0.5rem 2rem 0 0;
+    }
+
+    .mainloginCU .foofr a:first-child {
+        display: block;
+        text-align: right;
+        padding-bottom: 1rem;
+    }
+
+    .gob-mesage-response div {
+        padding: 0 1rem;
+    }
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="vista/css/subirRecetasMed.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/2201e9601f.js" crossorigin="anonymous"></script>
+    <!-- <script src="vista/js/subirRecetasMed.js"></script> -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="vista/js/subirRecetasMed.js"></script>
+    <script src="vista/js/date.js"></script>
+    <link rel="stylesheet" href="vista/css/bootstrap-datepicker.standalone.css">
+
+</head>
+
+<body>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <!-- Booststrap 5.0.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- JQuery 3.6.0 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+
+    <div class="container-fluid"
+        style="background-image:url('https://www.minsal.cl/wp-content/uploads/2022/03/cropped-BANNER-Minsal.png')"
+        id="img-back">
+        <div class="card">
+            <div class="form">
+                <div class="left-side">
+                    <div class="left-heading">
+                        <h3>Recetas</h3>
+                    </div>
+                    <div class="steps-content">
+                        <h3>Paso <span class="step-number">1</span></h3>
+                        <p class="step-number-content active">Especifica la información del paciente.
+                        </p>
+                        <p class="step-number-content d-none">Diagnóstico detectado para el paciente</p>
+                        <p class="step-number-content d-none">Administración general de medicamentos para diagnóstico previo</p>
+                        <p class="step-number-content d-none">Comparte y visualiza la receta generada
+                        </p>
+                    </div>
+                    <ul class="progress-bar">
+                        <li class="active">Información Paciente</li>
+                        <li>Síntomas</li>
+                        <li>Medicación</li>
+                        <li>Recetar</li>
+                    </ul>
+
+
+
+                </div>
+                <div class="right-side">
+                    <div class="main active">
+                        <small><i class="fa fa-user fashow"></i></small>
+                        <div class="text">
+                            <h2>Información del paciente</h2>
+                            <p>Proporciona la información del paciente para subir una receta médica</p>
+                        </div>
+                        <div class="input-text">
+                            <div class="input-div">
+                                <input type="text" id="txtRut" required require>
+                                <span>Rut</span>
+                            </div>
+                            <div class="input-div"><input type="text" id="user_name" hidden>
+                                <input type="text" id="txtNombre" requir required>
+                                <span>Nombre</span>
+                            </div>
+                        </div>
+                        <div class="input-text">
+                            <div class="input-div">
+                                <input type="text" id="txtApellido" required require>
+                                <span>Apellido</span>
+                            </div>
+                        </div>
+                        <div class="input-text">
+                            <div class="input-div">
+                                <select required>
+                                    <option value="" selected disabled hidden>Previsión</option>
+                                    <optgroup label="Fonansa">
+                                        <option>Fonasa</option>
+                                    </optgroup>
+                                    <optgroup label="Isapre">
+                                        <option>ISAPRE CRUZ BLANCA S.A.</option>
+                                        <option>ISAPRE CONSALUD S.A.</option>
+                                        <option>ISAPRE COLMENA GOLDEN CROSS S.A.</option>
+                                        <option>ISAPRE BANMÉDICA S.A.</option>
+                                        <option>ISAPRE NUEVA MASVIDA S.A.</option>
+                                        <option>ISAPRE VIDA TRES S.A.</option>
+                                        <option>ISALUD ISAPRE DE CODELCO</option>
+                                        <option>ISAPRE FUNDACIÓN ASISTENCIAL Y DE SALUD TRABAJADORES DEL BANCO DEL
+                                            ESTADO DE CHILE</option>
+                                        <option></option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="input-div">
+                                <select id="centromed">
+                                    <option value="" selected disabled hidden>Centro de salud</option>
+                                    <option value="VidaIntegra">VidaIntegra</option>
+                                    <option value="Red Salud">Red Salud</option>
+                                    <option>Otro...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="buttons button_space">
+                            <a href="/menuMedico.html">
+                                <button class="back_button">Volver</button></a>
+                            <button class="next_button">Siguiente</button>
+
+                        </div>
+
+                    </div>
+                    <div class="main">
+                        <small><i class="fa-solid fa-clipboard fashow"></i></small>
+                        <div class="text">
+                            <h2>Síntomas</h2>
+                            <p>Especifica el diagnóstico principal, la duración y tipo de reposo para la receta</p>
+                        </div>
+                        <div class="input-text">
+                            <div class="input-div">
+                                <select id="sltcReposo">
+                                    <option value="" selected disabled hidden>Reposo</option>
+                                    <option value="Absoluto">Absoluto</option>
+                                    <option value="Parcial">Parcial</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-daterange input-group input-text" id="datepicker">
+                            <div class="input-div">
+                                <input type="text" data-provide="datepicker" class="input-sm form-control" name="start"
+                                    id="pst" required readonly /><span>Desde</span>
+                            </div>
+                            <span class="input-group-addon">_</span>
+                            <div class="input-div">
+                                <input type="text" data-provide="datepicker" class="input-sm form-control" name="end"
+                                    id="fut" required readonly />
+                                <span>Hasta</span>
+                            </div>
+                        </div>
+                        <div class="input-text">
+                            <div class="input-div">
+                                <input type="text" id="txtDiag" required require>
+                                <span>Diagnóstico principal</span>
+                            </div>
+                        </div>
+                        <div class="buttons button_space">
+                            <button class="back_button">Volver</button>
+                            <button class="next_button">Siguiente</button>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <small><i class="fa-solid fa-capsules fashow"></i></small>
+                        <div class="text">
+                            <h2>Medicación</h2>
+                            <p>¿Qué medicamentos le recetara al paciente?</p>
+                        </div>
+                        <div class="input-text">
+                            <div class="input-div">
+                                <input type="text" required require>
+                                <span>Medicamento 1</span>
+                            </div>
+                            <div class="input-div">
+                                <input type="text" required require>
+                                <span>Duración/Intervalos</span>
+                            </div>
+                        </div>
+                        <div class="input-text">
+                            <div class="input-div">
+                                <input type="text" required>
+                                <span>Medicamento 2</span>
+                            </div>
+                            <div class="input-div">
+                                <input type="text" required>
+                                <span>Duración/Intervalos</span>
+                            </div>
+                        </div>
+                        <div class="input-text">
+                            <div class="input-div">
+                                <input type="text" required>
+                                <span>Medicamento 3</span>
+                            </div>
+                            <div class="input-div">
+                                <input type="text" required>
+                                <span>Duración/Intervalos</span>
+                            </div>
+                        </div>
+                        <div class="buttons button_space">
+                            <button class="back_button">Volver</button>
+                            <button class="next_button">Siguiente</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="main">
+                        <small><i class="fa-solid fa-comment-medical  fashow"></i></small>
+                        <div class="text">
+                            <h2>Receta médica proporcinada</h2>
+                            <p>¿Están los datos correctos? Puedes volver en caso de que necesites corregir algo</p>
+                        </div>
+                        <div class="user_card">
+                            <span></span>
+                            <div class="circle">
+                                <span><i class="fa fa-user-circle fa-solid fa-4x"></i></span>
+
+                            </div>
+                            <div class="social">
+                                <span><i id="ic" class="fa fa-share-alt"></i></span>
+                                <span><i id="ic" class="fa fa-eye"></i></span>
+                            </div>
+                            <div class="user_name">
+                                <h3><label id="lblNombre"></label><label id="lblApellido"></label></h3>
+                                <div class="detail">
+                                    <p><label id="lblRut"></label></p>
+                                    <p><label id="lblDiag"></label><label id="lblReposo"></label></p>
+                                </div>
+                                <div>
+                                    <label id="lblCorreo"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons button_space">
+                            <button class="back_button">Volver</button>
+                            <button class="submit_button">Recetar</button>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                        <div class="text congrats">
+                            <h2>¡Todo listo!</h2>
+                            <p>Su paciente ha sido recetado con exito.</p><br>
+                                <span class="shown_name">
+                                    <div class="buttons button_space" id="xd">
+                                        <a href="/menuMedico.html">
+                                            <button class="back_button" id="exit">Volver</button></a>
+                                    </div>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vista/js/bootstrap-datepicker.js"></script>
+    <script src="vista/js/bootstrap-datepicker.es.min.js"></script>
+</body>
+
+</html>
